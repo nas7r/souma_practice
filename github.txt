@@ -1,0 +1,23 @@
+<1回目Push方法>　保存してから行う
+git init
+git status
+git add .     ※ .　じゃなくてファイル名でもOK
+git commit -m "コメント"
+git remote add origin https://~~      ※push先を指定すること origin=https 住所みたいなこと
+git push origin main　　　　※main=ブランチのこと
+
+<2回目Push方法> 編集したら保存
+git status
+git add .
+git commit -m "コメント"
+git push origin main　　　※１回目でoriginの登録は済んでいるからPushするブランチを指定するだけ
+
+
+<error: failed to push some refs to　が出てpushできない場合>
+mainではない別のブランチを追加する　　https://backlog.com/ja/git-tutorial/stepup/07/
+git branch 新しいブランチ名
+git checkout 新しいブランチ名
+git add .
+git commit -m "コメント"
+git push origin 新しいブランチ名
+
